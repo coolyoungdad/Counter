@@ -15,10 +15,10 @@ var markup = document.documentElement.innerHTML;
 if(markup != document.documentElement.innerHTML) {
 	console.log('url has changed');
 	//reset back to default (off) state
+	markup = document.documentElement.innerHTML;
 	chrome.tabs.executeScript(tab.id, {
 		file: 'turnOff.js'
 	});
-	markup = document.documentElement.innerHTML;
 };	
 
 //check for topmost window, scroll in tweet item page and dms
