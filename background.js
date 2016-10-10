@@ -1,13 +1,28 @@
-// Called when the user clicks on the browser action.
+var isOn = false;
 
-chrome.browserAction.onClicked.addListener(function(tab) {
-  // No tabs or host permissions needed!
-  chrome.tabs.executeScript({
+function updateIcon(tab) {
+	var text = '';
+	if (isOn) text = 'on';
+	chrome.browserAction.setBadgeText({
+		text: text,
+		tabId: tab.id
+	});
+};
+
+function runScript(tab) {
+	var file = isOn ? 'turnOn.js' : 'turnOff.js';
+	//load jQuery
+	chrome.tabs.executeScript({
         file: 'jquery-3.1.1.slim.min.js'
     });
-  chrome.tabs.executeScript(null, {
-    file: "autoScroll.js"
-  });
+
+	chrome.tabs.executeScript(tab.id {
+		file: file
+	});
+};
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+	isOn = !isOn;
+	updateIcon(tab);
+	runScript(tab);
 });
-
-
