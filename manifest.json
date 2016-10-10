@@ -1,6 +1,6 @@
 {
-  "name": "Page Redder",
-  "description": "Make the current page red",
+  "name": "TwitterScroll",
+  "description": "Scroll through feeds",
   "version": "2.0",
   "permissions": [
     "activeTab"
@@ -10,13 +10,18 @@
     "persistent": false
   },
   "content_scripts": [
-    {
-        "js": [ "jquery-3.1.1.slim.min.js","background.js" ],
-        "run_at": "document_end"
+    {   
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [ 
+        "jquery-3.1.1.slim.min.js","background.js" 
+      ],
+      "run_at": "document_end"
     } 
   ],
   "browser_action": {
-    "default_title": "Make this page red"
+    "default_title": "Start scrolling"
   },
   "manifest_version": 2
 }
