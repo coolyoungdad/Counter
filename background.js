@@ -16,7 +16,7 @@ function runScript(tab) {
         file: 'jquery-3.1.1.slim.min.js'
     });
 
-	chrome.tabs.executeScript(tab.id {
+	chrome.tabs.executeScript(tab.id, {
 		file: file
 	});
 };
