@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "name": "Counter",
     "description": "Adds and subtracts at the press of a button",
     "manifest_version": 2,
@@ -17,33 +16,7 @@
 
   "content_scripts": [{
     "matches": ["http://www.google.com/*"],
-    "js": ["script.js", "contentScriptOn.js"]
-  }]
-=======
-  "name": "TwitterScroll",
-  "description": "Scroll through feeds",
-  "version": "2.0",
-  "permissions": [
-    "activeTab"
-  ],
-  "background": {
-    "scripts": ["jquery-3.1.1.slim.min.js", "background.js"],
-    "persistent": false
-  },
-  "content_scripts": [
-    {   
-      "matches": [
-        "*://*/*"
-      ],
-      "js": [ 
-        "jquery-3.1.1.slim.min.js","background.js" 
-      ],
-      "run_at": "document_end"
-    } 
-  ],
-  "browser_action": {
-    "default_title": "Start scrolling"
-  },
+    "js": ["script.js"]
+  }],
   "manifest_version": 2
->>>>>>> a7bf7f58a389673378cfabfc6741bdddbc6b6891
 }
