@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+ <html>
+   <head>
+   	<script type="text/javascript" src="script.js"></script>
+   	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand|Roboto|Roboto+Mono|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Monoton|Rubik:900" rel="stylesheet">
+   	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style_new.css">
+   </head>
+   <body>
+   	<div class="box">
+   		<label for="qty"><h3 title="Quantity">Interactions</h3></label>
+   		<input id="qty" value="" disabled/>
+        <div id = "button">
+       		<button id="down" tabindex="-1" >-1</button>
+       		<button id="up" tabindex="-1">+1</button>
+        </div>
+   			<div id="clearButton">
+   				<button id="clear" tabindex="-1" >Clear</button>
+   			</div>
+   	</div>
+    <p id = "footer_1"> 3.7 hourly = 28 a day </p>
+    <p id = "footer_2"> &copy; 2017 Alexander Bercow </p>
+   </body>
+ </html>

@@ -1,0 +1,93 @@
+/*font-face {
+	font-family: 'VT323', monospace;
+	/*src: ColabLig.otf*/
+
+/**********
+COLOR FAMILY:
+
+#fff #333 #666 #999 #000
+**********/
+
+/*Color Palette Family 2:
+F8B195 (Peach)   F67280 (Pink)   C06C84 (Magenta)  6C5B7B (Purple)   355C7D (Dark Blue)*/
+
+body {
+    /*font-family: helvetica, arial, verdana, sans-serif; */
+		font-family: 'Roboto', sans-serif;
+    font-family: 'VT323', sans-serif;
+		font-weight: bold;
+		font-size: 5em;
+		text-decoration: none;
+    background-color: #6C5B7B;
+}
+
+input {
+  font-family: 'VT323', sans-serif;
+	font-size: 2.4em;
+	background-color: transparent;
+	text-align: center;
+	border-width: 0;
+	width: 100%;
+	margin: .25em .25em .25em 0 auto;
+	color: #F8B195;
+}
+
+input:focus input:active {
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    outline-width: 0;
+}
+
+label {
+	display: block;
+	font-size: .8em;
+}
+
+button {
+	/* basics */
+	color: #F67280;
+	background-color: #C06C84;
+	/* rounded corners */
+    -webkit-border-radius: 10%;
+          border-radius: 20%;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	font-family: "VT323", sans-serif;
+	font-weight: bold;
+	font-size: .8em;
+	max-width: 50%;
+	padding: 0 2%;
+
+}
+
+button:hover, button:active, button:focus {
+	background-color: darkblue;
+}
+
+#clearButton {
+	/*margin: 0 auto;*/
+	/*padding: em;*/
+	text-align: center;
+}
+
+.box {
+	/* basics */
+	float: right;
+	background-color: #355C7D;
+	color: #000;
+  text-align: center;
+	/*max-width: 940px;*/
+	max-width:100%;
+  margin: 0 auto;
+  padding: 0 5%;
+
+	/* rounded corners */
+    /*-webkit-border-radius: 12%;
+    border-radius: 12%;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+    padding: .2em .2em .1em;
+    width: 10px;
+	margin: 0 auto;
+  	-webkit-box-shadow: 0px 0px 5px 0px #000;
+    box-shadow: 0px 0px 5px 0px #000;*/
+}
