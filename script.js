@@ -6,6 +6,7 @@ function modify_qty(val) {
       localStorage.qty = 0;
     }
 
+
     document.getElementById('qty').value = localStorage.qty;
 
     console.log(`localStorage.qty is currently: ${localStorage.qty}`)
@@ -25,6 +26,7 @@ function modify_qty(val) {
     // read from localStorage
     console.log(`attempting to update val to: ${new_qty}...`)
     localStorage.qty = new_qty;
+    play_audio();
     console.log(`reading localStorage.qty: ${localStorage.qty}...`)
 }
 
@@ -33,6 +35,24 @@ function clear_qty(){
     localStorage.qty = 0;
     document.getElementById('qty').value = localStorage.qty;
     return clear;
+}
+
+//Plays audio at 14 and 28 interactions
+function play_audio(){
+
+  if (localStorage.qty == 14) {
+    console.log("Audio Played!");
+    // var audio = document.getElementById("Sound").play();
+    var audio = new Audio("trapsiren.wav");
+    audio.play();
+  }
+
+  if (localStorage.qty == 28){
+    console.log("Audio Played!");
+    var audio = new Audio("trapsiren.wav");
+    audio.play();
+  }
+
 }
 
 // Start listening

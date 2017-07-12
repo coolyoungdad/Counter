@@ -6,15 +6,21 @@ body {
   /*font-family: 'Bungee Shade', cursive;*/
   font-size: 1.5em;
   text-decoration: none;
-  background-color: #F0DDD6;
+  /*background-color: #F0DDD6;*/
+  background-color: #013A6B;
+  /*background-image: -webkit-linear-gradient(32deg, #013A6B 50%, #004E95 50%);*/
+  background-image: -webkit-linear-gradient(32deg, #202322 50%, #4C504F 50%);
+  min-height: 75px;
 }
 
 .box {
 	/* basics */
 	float: right;
 	/*background-color: #355C7D;*/
-  background-color: #F0EAD6;
-	color: #000;
+  /*background-color: #F0EAD6;*/
+  background-color: transparent;
+
+	color: #363636;
   text-align: center;
 
 	max-width:100%;
@@ -25,14 +31,19 @@ body {
 
 h3 {
   color: #F67280;
-  padding: 0;
-  font-size: 1em;
-  font-family: 'Bungee Shade', cursive;
+  color: #F8F8FF;
+  padding: 0 10%;
+  font-size: 1.4em;
+  font-family: 'Monoton', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+
 }
 
 input {
   /*font-family: 'VT323', sans-serif;*/
   font-family: 'Monoton', cursive;
+  font-family: 'Ubuntu', sans-serif;
 	font-size: 2em;
 	background-color: transparent;
 	text-align: center;
@@ -40,7 +51,7 @@ input {
 	width: 100%;
 	margin: .3em .10em 10em 0 auto;
 	/*color: #F8B195;*/
-  color: #130f30;
+  color: #F8F8FF;
 }
 
 input:focus input:active input::selection{
@@ -52,26 +63,34 @@ input:focus input:active input::selection{
 }
 
 button {
-  color: #F67280;
-  background-color: #F0EAD6;
-  border-color: #C06C84;
+  color: #F8F8FF;
+  background-color: #363636;
+  border-color: #4C504F;
+  border-width: medium;
   /*font-family: "VT323", sans-serif;*/
   font-family: 'Bungee Shade', cursive;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 1.4em;
-  max-width: 75%;
+  max-width: 85%;
   padding: 0 2%;
+  margin: .3em .3em .3em .3em;
 }
 
 button:hover, button:active, button:focus {
 	background-color: #355C7D;
+  cursor: hand;
 }
 
 #clearButton {
 	text-align: center;
-  margin: .5em .5em 1.4em .5em;
-  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*margin: .2em .2em .2em .2em;
+  margin: 0 0 0 0;*/
   padding: 0 0 0 0;
+  /*max-width: 20%;*/
 }
 
 #button {
@@ -82,8 +101,10 @@ button:hover, button:active, button:focus {
 
 #footer_1{
   font-size: 0.6em;
+  color: #4C504F;
 }
 
 #footer_2{
   font-size: 0.2em;
+  color: #4C504F;
 }
