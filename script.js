@@ -9,7 +9,7 @@ function modify_qty(val) {
 
     document.getElementById('qty').value = localStorage.qty;
 
-    console.log(`localStorage.qty is currently: ${localStorage.qty}`)
+    console.log(`localStorage.qty is currently: ${localStorage.qty}`);
 
     // grab markup, update values
     var qty = document.getElementById('qty').value;
@@ -29,6 +29,16 @@ function modify_qty(val) {
     play_audio();
     console.log(`reading localStorage.qty: ${localStorage.qty}...`)
 }
+
+
+// function hourly() {
+//   var time = localStorage.time;
+//   localStorage.time = [];
+//   time.push(new Date.now());
+//   console.log(`This is the time: ${time}`)
+// }
+//
+// hourly();
 
 //Clear the input back to 0
 function clear_qty(){
